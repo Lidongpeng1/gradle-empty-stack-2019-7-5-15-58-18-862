@@ -5,8 +5,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+//    @Test public void testAppHasAGreeting() {
+//        App classUnderTest = new App();
+//        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+//    }
+
+//    @Test public static void main(String[] args){
+//        Mobile nokiaone = new Mobile("personone","black","nokia");
+//        System.out.println(nokiaone.toString());
+//    }
+
+    @Test public void testPerson(){
+        Person ethan = new Person("ethan");
+        Mobile apple = new Iphone("appleone","black","apple");
+        Mobile oppo = new Andriod("oppoone","white","oppo");
+        ethan.callSomeMessage(apple,"This is a fault testThis is a fault testThis is a fault test");
+        ethan.callSomeMessage(apple,"iphone pass");
+        ethan.callSomeMessage(oppo,"This is a fault testThis is a fault testThis is a fault test");
+        ethan.callSomeMessage(oppo,"andriod pass");
     }
 }
